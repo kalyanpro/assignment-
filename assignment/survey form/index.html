@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+   <section class="flex-column form-section">
+    <h1 class="form-header">Survey Form</h1>
+    <form action="#" name="myform" onsubmit="return validateForm()" method="post">
+        <div class="row">
+            <input type="text" name="Firstname" placeholder="First name" class="form-input" required/>
+            <input type="text" name="Lastname" placeholder="Last name" class="form-input" required/>
+        </div>
+        <div class="row">
+            <input type="date" name="DateOfBirth" placeholder="Date of Birth" class="form-input" required/>
+        </div>
+        <div class="row">
+            <label for="Country">Country
+            <select name="Country" id="ctry">
+            <option value="options">-please select an Country</option>
+            <option value="India">India</option>
+            <option value="Australia">Australia</option>
+            <option value="America">America</option>
+            <option value="Japan">Japan</option>
+            <option value="Paris">Paris</option>
+            <option value="London">London</option>
+            <option value="Germeny">Germeny</option>
+            <option value="Franse">Franse</option>
+            </select>
+            </label>
+        </div>
+        <div class="row">
+            <label for="checkbox">Male</label>
+            <input type="checkbox" name="male" class="form-input" required/>
+            <label for="checkbox">Female</label>
+            <input type="checkbox" name="female" class="form-input"required>
+        </div>
+        <div class="row">
+            <input type="text" name="Profession" placeholder="Profession" class="form-input" required/>
+        </div>
+        <div class="row">
+            <input type="text" name="Email" placeholder="Enter your Email" class="form-input" required/>
+        </div>
+        <div class="row">
+            <input type="text" name="MobileNumber" placeholder="Enter your mobile number" class="form-input" required/>
+        </div>
+        <div class="row">
+            <button class="btn btn-submit" type = "button">Submit</button>
+        </div>
+    </form>
+    
+   </section>
+</body>
+</html>
